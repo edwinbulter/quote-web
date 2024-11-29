@@ -1,0 +1,45 @@
+.eventBox {
+    position: absolute;
+    top: 60vh;
+    left: 141px;
+    width: calc(100vw - 141px);
+    height: 40vh;
+}
+
+.eventBoxTitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: calc(100vw - 141px);
+    background-color: darkgray;
+    padding-top: 3px;
+    font-size: 16px;
+
+}
+
+.messageBox {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: calc(100vw - 151px);
+    height: calc(40vh - 35px);
+    padding: 5px;
+    background: lightgray;
+    color: white;
+    border: none;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.messageOdd {
+    padding: 3px;
+    color: green;
+}
+
+.messageEven {
+    padding: 2px;
+    color: black;
+}
