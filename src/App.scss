@@ -44,6 +44,17 @@
   left: 15px;
 }
 
+.logo-header {
+  font-weight: bold;
+  font-size: 7px;
+  position: absolute;
+  height: 30px;
+  width: 90px;
+  top: 13px;
+  left: 8px;
+  color: black;
+}
+
 .logo-main {
   font-weight: 800;
   font-size: 35px;
@@ -53,17 +64,6 @@
   top:0;
   left:0;
   color: green;
-}
-
-.logo-footer {
-  font-weight: bold;
-  font-size: 9px;
-  position: absolute;
-  height: 30px;
-  width: 90px;
-  top: 40px;
-  left: 0;
-  color: black;
 }
 
 .basicButton {

@@ -94,8 +94,8 @@ function App() {
             </div>
             <div className="buttonBar">
                 <div className="logo">
+                    <div className="logo-header">CODE-BULTER</div>
                     <div className="logo-main">Quote</div>
-                    <div className="logo-footer">by &copy;CODE-BULTER</div>
                 </div>
                 <button className="newQuoteButton" disabled={loading} onClick={newQuote}>
                     {loading ? "Loading..." : "New Quote"}
