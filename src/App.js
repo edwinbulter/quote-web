@@ -16,11 +16,9 @@ function App() {
 
     async function fetchFirstQuote() {
         try {
-            console.log("Fetching quote...");
             const quote = await quoteApi.getQuote();
             setQuote(quote);
             setReceivedQuotes([quote])
-            console.log("Quote fetched");
         } finally {
             setLoading(false);
         }
@@ -101,7 +99,7 @@ function App() {
                     {loading ? "Loading..." : "New Quote"}
                 </button>
                 <button className="likeButton" disabled={liking || quote.liked} onClick={like}>
-                    {loading ? "Liking..." : "Like"}
+                    {liking ? "Liking..." : "Like"}
                 </button>
                 <button className="previousButton" disabled={indexRef.current === 0} onClick={previous}>
                     Previous
