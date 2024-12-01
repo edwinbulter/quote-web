@@ -16,6 +16,7 @@ function App() {
 
     async function fetchFirstQuote() {
         try {
+            setLoading(true);
             const quote = await quoteApi.getQuote();
             setQuote(quote);
             setReceivedQuotes([quote])
@@ -26,6 +27,7 @@ function App() {
 
     async function newQuote() {
         try {
+            setLoading(true);
             const quote = await quoteApi.getUniqueQuote(receivedQuotes);
             setQuote(quote);
             indexRef.current = receivedQuotes.length;
