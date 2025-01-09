@@ -27,8 +27,14 @@ async function likeQuote(quote) {
     return await response.json();
 }
 
+async function getLikedQuotes() {
+    const response = await fetch(`${BASE_URL}/quote/liked`, {
+        method: "GET",
+    });
+    return await response.json();
+}
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-    getQuote, getUniqueQuote, likeQuote
+    getQuote, getUniqueQuote, likeQuote, getLikedQuotes
 };

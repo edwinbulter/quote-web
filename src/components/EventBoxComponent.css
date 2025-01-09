@@ -43,3 +43,25 @@
     padding: 2px;
     color: black;
 }
+
+.favouritesButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: calc(100vw - 141px);
+    background-color: green;
+    border: 0;
+    /*border-radius: 4px;*/
+    font-size: 14px;
+    /*padding-top: 3px;*/
+}
+
+.favouritesButton:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.favouritesButton:disabled {
+    background-color: #c9f6cd;
+}

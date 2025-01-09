@@ -1,15 +1,22 @@
 # Quote web app written in ReactJS
-This web app uses the REST API which can be found at:
-https://github.com/edwinbulter/quote-server
+This web app can be used with the java API backend which can be found at:
+> https://github.com/edwinbulter/quote-server
+
+Or with the python/django API backend which can be found at:
+> https://github.com/edwinbulter/quote-django
+
 
 ## Screenshot
 ![quote-web-screenshot](public/quote-web-screenshot.png)
 
 
 Implemented features:
-- Liked Quotes Feed
-  - When a user likes a quote, the quote is send to all other users
-  - Liked quotes are added in the top of the Feed box
+- Favourite Quotes Feed
+  - When a user likes a quote, the quote is send to all other users (only works for the quote-server java backend)
+  - Liked quotes are added in the top of the Favourite Quotes box
+- Favourite Quotes Loading
+  - When the screen starts, the liked quotes are fetched and loaded in the Favourite Quotes box
+  - The header of the favourite quotes box also functions as a refresh button, which comes in handy if the backend doesn't implement the feed functionality like quote-django backend
 - New Quote Button:
   - Requests a new Random quote and sends the ids of all previously received quotes in the request to avoid receiving the same quote again
   - The button is disabled while the new quote is loading (and displays loading...)
